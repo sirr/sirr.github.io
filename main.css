@@ -1,96 +1,64 @@
-/*
- * Globals
- */
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: #000;
+  font-size: 62.5%;
+}
 
-/* Links */
 a{
   color: #000;
+  font-size: 1.6rem;
 }
 a:focus,
 a:hover {
   color: #666;
 }
 
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
 }
-body {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  color: #000;
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  line-height: 1.5;
-  letter-spacing: 0.22em;
-}
-
-h1,
-h2,
-strong {
-  color: #333;
-}
-
-code,
-pre {
-  background: #fff;
-  color: #ff7496;
-}
-
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
   min-height: 100%;
 }
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
+
+.separator {
+  display: none;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 2rem;
+.personal-description span {
+  display: block;
 }
 
-.jumbotron{
-  background-color: #fff;
-  border-radius: 0;
-  border: solid 1px #dee0e3;
+.social-links > :not(:last-child) {
+  padding-right: 10px;
 }
-/*
- * Affix and center
- */
 
-@media (min-width: 40em) {
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
+@media (min-width: 768px) {
+  .info {
+    padding: 20px 60px;
+    border: solid 1px #dee0e3;
   }
-  /* Handle the widths */
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
 
-@media (min-width: 62em) {
-  .site-wrapper-inner {
-    vertical-align: middle;
+  .personal-description span {
+    display: inline;
   }
-  .cover-container {
-    width: 42rem;
+
+  .separator {
+    display: inline;
+    font-size: 2.4rem;
+    color: #ff7496;
   }
 }
