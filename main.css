@@ -2,7 +2,8 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Raleway', sans-serif;
+
   color: #000;
   font-size: 62.5%;
 }
@@ -33,33 +34,17 @@ p {
   align-items: center;
   text-align: center;
   min-height: 100%;
-}
-
-.separator {
-  display: none;
-}
-
-.personal-description span {
-  display: block;
+  background: linear-gradient(90deg, #000 50%, #fff 50%);
 }
 
 .social-links > :not(:last-child) {
   padding-right: 10px;
 }
 
-@media (min-width: 768px) {
-  .info {
-    padding: 20px 60px;
-    border: solid 1px #dee0e3;
-  }
-
-  .personal-description span {
-    display: inline;
-  }
-
-  .separator {
-    display: inline;
-    font-size: 2.4rem;
-    color: #ff7496;
-  }
+.info-card {
+  padding: 10rem 3rem;
+  min-width: 26rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
 }
